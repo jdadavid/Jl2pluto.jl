@@ -18,8 +18,13 @@ Call by :
   julia Plutojl2jl.jl [-h] [-i] [-f] [-k] inputplutonb.jl [output.jl]
 
   If "output.jl" unspecified and no "-i", aborts.
+  
   If "-i", do the conversion inplace (so, also assume "-f")
+  
   If [no "-i and ] no "-f", do not overwrite existing "output.jl"
+  
   If                  "-f", force write "output.jl", erasing it if already existing
+  
+  
   
   If "-k" keep one blank line between cells (else delete both two blank lines between cells)
